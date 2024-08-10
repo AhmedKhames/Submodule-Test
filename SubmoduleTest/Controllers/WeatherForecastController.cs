@@ -23,6 +23,7 @@ namespace SubmoduleTest.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
             Class1 class1 = new();
+            class1.sss = "dd";
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
